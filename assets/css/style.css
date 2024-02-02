@@ -1,0 +1,105 @@
+/* 
+Page: Solana Blockchain Development
+Author: Usama Javaid 
+*/
+
+/* Including Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./../fonts/Helvetica/Helvetica.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./../fonts/Helvetica/Helvetica-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Setting up some Default Properties */
+
+body{margin: 0;position:relative;font-family:'Helvetica',sans-serif;background:#000000}
+*{box-sizing:border-box;text-decoration:none;transition: .3s ease-in-out;}
+h1,h2,h3,h4,h5,h6{margin:0;font-family:'Helvetica',sans-serif;color: #fff;}
+p{margin:0;font-family: 'Helvetica',sans-serif;font-weight: 400;line-height:1.7;color: #fff;}
+*:focus{outline:none;}
+a,a:hover{text-decoration:none;transition: .3s ease-in-out;}
+img{max-width:100%;height:auto}
+
+/* Initializing Default Container Sizes and other settings */
+.dk_container_fluid{max-width: 100%;}
+.dk_container{max-width: 1140px;margin: auto;padding: 10px;}
+.pd_5{padding: 5px;}
+.pd_10{padding: 10px;}
+.flex{display: flex;flex-wrap: wrap;}
+.horizontal_center{justify-content: center;}
+.horizontal_space_bw{justify-content: space-between;}
+.vertical_center{align-items: center;}
+a.primary_dk_button{text-transform:uppercase;border-radius:50px;color:#fff;background-image: linear-gradient(129.88deg, rgb(140, 1, 250) 7.12%, rgb(0, 0, 0) 102.65%);padding:16px 33px 16px 33px;font-family: 'Roboto',sans-serif;font-size: 15px;font-weight: 400;line-height: 20px;letter-spacing: 0em;text-align: center;border:1px solid #000;}
+a.secondary_dk_button{text-transform:uppercase;border-radius:50px;color:#fff;padding:16px 33px 16px 33px;font-family: 'Roboto',sans-serif;font-size: 15px;font-weight: 400;line-height: 20px;letter-spacing: 0em;text-align: center;border:1px solid #fff;}
+
+a.primary_dk_button:hover{background-image: linear-gradient(129.88deg, rgb(0, 0, 0) 7.12%, rgb(140, 1, 250) 102.65% )}
+a.secondary_dk_button:hover{background:#fff;color:#000}
+
+/* Header Styling */
+.top_bar{padding:4px;text-transform: uppercase;background-image: linear-gradient(to left,#0047FF,#00BCD4);font-family: 'Roboto',sans-serif;font-size: 17px;font-weight: 400;line-height: 27px;letter-spacing: 0em;text-align: center;}
+.dk_header{justify-content: space-between;}
+.dk_header_wrap{background: #00000099;position: absolute;top:35px;width: 100%;}
+
+nav ul{list-style-type: none;margin: 0;padding: 0;}
+.menu li{margin: 0 10px;}
+.menu li a{color: #848895;text-decoration: none;}
+.submenu{display: none;position: absolute;padding: 15px;background: #00000099;border-radius: 5px;box-shadow: 0 10px 10px rgba(0,0,0,.5);border: 1px solid hsla(0,0%,100%,.1);}
+.hamburger-menu{display: none;flex-direction: column;cursor: pointer;}
+.bar{width: 25px;height: 3px;background-color: #fff;margin: 4px 0;transition: 0.4s;}
+.menu.active{display: flex;flex-direction: column;background-color: #000000f2;position: absolute;top: 60px;left: 0;right: 0;z-index: 1;}
+.submenu li{margin: 0 5px 10px;}
+.submenu li:last-child{margin-bottom: 0;}
+.menu.active li {padding: 10px;}
+.menu.active .submenu {display: block;}
+.menu li:hover .submenu {display: block;}
+
+
+/* Banner Section Styling */
+
+.dk_banner_section{padding: 150px 10px 10px;background: url(../images/h_bg_1.png),url(../images/h_bg_2.png);background-repeat: no-repeat;background-size: contain;background-position: left top,right top;}
+.dk_banner_section h2{max-width: 800px;margin: auto;margin-bottom:55px;text-align: center;font-family: 'Helvetica',sans-serif;font-size: 70px;font-weight: 400;line-height: 76px;letter-spacing: 0.6800000071525574px;text-align: center;}
+.dk_banner_section p{max-width: 600px;margin: auto;text-align: center;font-family: 'Helvetica',sans-serif;font-size: 21px;font-weight: 400;line-height: 27px;letter-spacing: 0em;text-align: center;}
+
+.dk_banner_buttons{max-width: 500px;margin: auto;justify-content: center;margin-top: 40px;}
+.dk_banner_buttons a{margin: 5px;}
+
+p.dk_b_last_para{max-width:100%;text-transform:uppercase;color:#618ADC;font-family: 'Helvetica',sans-serif;font-size: 15px;font-weight: 400;line-height: 17px;letter-spacing: 0.800000011920929px;text-align: center;margin-top: 100px;}
+
+
+/* Section 2 Styling */
+.dk_section_2_inner img{padding: 10px;}
+
+
+/* Responsive Mode */
+
+
+@media all and (max-width: 991px) {
+    .hamburger-menu{display: flex;}
+    .menu{display: none;}
+
+}
