@@ -3,10 +3,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const menu = document.querySelector(".menu");
 
     hamburgerMenu.addEventListener("click", function() {
+        hamburgerMenu.classList.toggle("active");
         menu.classList.toggle("active");
     });
 
     const menuItems = document.querySelectorAll(".menu > li");
+
+    menuItems.forEach(function(item) {
+        item.addEventListener("click", function() {
+            const submenu = this.querySelector(".submenu");
+            if (submenu) {
+                item.classList.toggle("active");
+                submenu.classList.toggle("active");
+            }
+        });
+    });
 
 });
 
