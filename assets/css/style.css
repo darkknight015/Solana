@@ -187,8 +187,8 @@ button.tab_btn_dk:hover,button.tab_btn_dk.active{border-color: #A962FF;}
 
 @media all and (max-width: 768px) {
     .hamburger-menu{display: flex;}
-    .menu{opacity: 0;height: 0;overflow: hidden;width: 0;}
-    .menu.active{background: #000;padding: 5px 0;height: auto;opacity: 1;width: auto;}
+    .menu{opacity: 0;height: 0;overflow: hidden;width: 0;margin-left: -15px;}
+    .menu.active{background: #000;padding: 5px 0;height: auto;opacity: 1;width: auto;margin-left: 0px;}
     ul.submenu.active{height: auto;opacity: 1;}
     .menu li a svg{float: right}
     .menu li.active a svg{transform: rotate(180deg);}
